@@ -4,11 +4,11 @@ import { useState } from "react";
 import Link from "next/link";
 
 const VERTICALS = [
-  { slug: "devtools", label: "Developer Tools" },
+  { slug: "fintech", label: "Fintech" },
   { slug: "ai-ml", label: "AI / ML" },
-  { slug: "security", label: "Security" },
-  { slug: "infrastructure", label: "Infrastructure" },
-  { slug: "data", label: "Data Engineering" },
+  { slug: "healthtech", label: "Healthtech" },
+  { slug: "integration-etl", label: "Integration / ETL" },
+  { slug: "insurtech", label: "Insurtech" },
 ];
 
 export default function LandingPage() {
@@ -56,15 +56,14 @@ export default function LandingPage() {
       {/* Hero */}
       <section className="flex flex-col items-center justify-center flex-1 px-6 py-24 text-center">
         <span className="inline-block mb-4 rounded-full bg-indigo-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-indigo-700">
-          Niche job board for technical roles
+          Niche job board for customer-facing technical roles
         </span>
         <h1 className="max-w-2xl text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-          Find the right technical job,{" "}
+          Find the right solutions or implementation job,{" "}
           <span className="text-indigo-600">without the noise</span>
         </h1>
         <p className="mt-5 max-w-xl text-lg text-gray-500">
-          Curated openings across developer tools, AI/ML, security, infrastructure, and data
-          engineering. Get matched to roles that fit your stack.
+          Curated customer-facing technical openings across Fintech, Healthtech, Insurtech AI/ML, and data integration/ETL. Get matched to roles that fit your background.
         </p>
 
         {/* Email signup */}

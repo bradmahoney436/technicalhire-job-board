@@ -7,7 +7,7 @@ const VERTICALS = [
   { slug: "healthtech", label: "Healthtech" },
   { slug: "integration-etl", label: "Integration / ETL" },
   { slug: "insurtech", label: "Insurtech" },
-  { slug: "hrtech", label: "HR Tech" },
+  { slug: "ai", label: "AI / ML" },
 ];
 
 async function getJobs(vertical: string | null): Promise<Job[]> {
