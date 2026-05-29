@@ -14,6 +14,7 @@ async function getJobs(vertical: string | null): Promise<Job[]> {
   let query = supabase
     .from("listings")
     .select("*")
+    .eq("active", true)
     .order("posted_at", { ascending: false });
 
   if (vertical) {

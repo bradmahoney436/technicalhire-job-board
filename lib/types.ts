@@ -13,6 +13,8 @@ export interface Database {
           apply_url: string;
           salary_range: string | null;
           remote: boolean;
+          active: boolean;
+          featured: boolean;
         };
         Insert: {
           id?: string;
@@ -25,6 +27,8 @@ export interface Database {
           apply_url: string;
           salary_range?: string | null;
           remote?: boolean;
+          active?: boolean;
+          featured?: boolean;
         };
         Update: {
           id?: string;
@@ -37,6 +41,8 @@ export interface Database {
           apply_url?: string;
           salary_range?: string | null;
           remote?: boolean;
+          active?: boolean;
+          featured?: boolean;
         };
         Relationships: [];
       };
