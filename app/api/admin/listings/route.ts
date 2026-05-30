@@ -34,6 +34,7 @@ export async function POST(req: NextRequest) {
     description: body.description || null,
     salary_range: body.salary_range || null,
     apply_url: body.apply_url,
+    posted_at: body.posted_at || new Date().toISOString(),
     remote: body.remote ?? false,
     active: true,
     featured: body.featured ?? false,

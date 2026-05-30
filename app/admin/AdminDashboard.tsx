@@ -26,6 +26,10 @@ type Listing = {
   posted_at: string;
 };
 
+function todayISO() {
+  return new Date().toISOString().split("T")[0];
+}
+
 const emptyForm = {
   role_title: "",
   company: "",
@@ -34,6 +38,7 @@ const emptyForm = {
   description: "",
   salary_range: "",
   apply_url: "",
+  posted_at: todayISO(),
   remote: false,
   featured: false,
 };
@@ -172,6 +177,15 @@ export default function AdminDashboard() {
                   placeholder="https://…"
                   value={form.apply_url}
                   onChange={(e) => setForm((f) => ({ ...f, apply_url: e.target.value }))}
+                  className={input}
+                />
+              </Field>
+              <Field label="Posted Date *">
+                <input
+                  required
+                  type="date"
+                  value={form.posted_at}
+                  onChange={(e) => setForm((f) => ({ ...f, posted_at: e.target.value }))}
                   className={input}
                 />
               </Field>
