@@ -9,6 +9,7 @@ const VERTICALS = [
   { slug: "integration-etl", label: "Data & ETL" },
   { slug: "ai", label: "AI / ML" },
   { slug: "saas", label: "SaaS"},
+  { slug: "other", label: "Other"},
 ];
 
 type Listing = {
