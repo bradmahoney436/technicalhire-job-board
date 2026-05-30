@@ -7,6 +7,8 @@ const VERTICALS = [
   { slug: "insurtech", label: "Insurtech" },
   { slug: "healthtech", label: "Healthtech" },
   { slug: "integration-etl", label: "Data & ETL" },
+  { slug: "ai", label: "AI / ML" },
+  { slug: "saas", label: "SaaS"},
 ];
 
 type Listing = {
